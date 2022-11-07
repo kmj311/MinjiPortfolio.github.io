@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/* Web Font Settings 
+  1. font-family: 'Roboto', sans-serif;
+  2. font-family: 'Open Sans', sans-serif;
+  3. font-family: 'Lato', sans-serif;
+  4. font-family: 'Nanum Gothic', sans-serif;
+  5. font-family: 'Noto Sans KR', sans-serif;  
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+*{ margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body{ width: 100%; height: 100%; }
+
+html{
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul, ol, dl, table, form, address, blockquote, p{
+  font-size: 1.4rem;
+}
+p{ line-height: 1.5; }
+
+ul, ol{ list-style: none; }
+a{ color: #000; text-decoration: none; }
+a:hover, a:focus{text-decoration: none;}
+
+table, tr, th, td{
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+caption{
+  height: 30px;
+  line-height: 30px;
+}
+
+fieldset{ border: 0; }
+legend{
+  width: 1px;
+  height: 1px;
+  font-size: 1px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+input, label{ vertical-align: middle; }
+
+
+/* Help Class Setting */
+
+/* ir(Image Replace) - 이미지 대체(치환) 기법 */
+.ir{
+  display: none;
+  width: 100%;
+  height: 100%;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: no-repeat 0 0;
+}
+
+/* 화면 감추기 클래스 */
+.screen-hidden{
+  width: 1px;
+  height: 1px;
+  font-size: 1px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+/* 플롯 해제 클래스 */
+.clearfix::after{
+  content: ''; 
+  display: block;
+  clear: both;
+}
+
+.container, .container-fluid{padding: 0;}
+.row, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{
+  margin: 0; padding: 0;}
+
+/* form */
+input[type="password"]:focus, input[type="email"]:focus, input[type="text"]:focus, input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus, textarea:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+/* 활성화 */
+.pf-active{
+  color: #C07F50 !important;
+}
+.pf-active::after{
+  content: '' !important;
+  display: block !important;
+  width: 100% !important;
+  height: 2px !important;
+  background-color: #C07F50 !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  opacity: 1 !important;
+}
+
+#side-nav .side-menu li.on a{color: #C07F50 !important;}
